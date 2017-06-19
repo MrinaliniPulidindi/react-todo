@@ -1,11 +1,11 @@
 var React = require('react');
-var Todo = React.createClass(
+var Comments = React.createClass(
   {
     render:function()
     {
-    var {text} = this.props;
+    var {id,text} = this.props;
       return(<div>{text}</div>);
     }
   }
 );
-module.exports = Todo;
+module.exports = Comments;
