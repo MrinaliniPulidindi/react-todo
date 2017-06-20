@@ -1,5 +1,5 @@
 var express = require('express');
 var app = express();
-
+const PORT = process.env.PORT||3000;
 app.use(express.static('public'));
-app.listen(3000,function(){console.log('Server is up and running')});
+app.listen(PORT,function(){console.log('Server is up and running')});
