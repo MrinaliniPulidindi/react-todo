@@ -1,6 +1,5 @@
 var React=require('react');
 var BlogComments = require('BlogComments');
-var Comment = require('Comment');
 var OpenBlog = require('OpenBlog');
 var AddBlog = require('AddBlog');
 var uuid = require('uuid');

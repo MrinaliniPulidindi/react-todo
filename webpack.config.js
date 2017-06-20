@@ -24,7 +24,10 @@ new webpack.ProvidePlugin({
     alias: {
 Main : 'app/components/main.jsx',
 OpenBlog : 'app/api/OpenBlog.jsx',
-Blogs : 'app/components/blogs.jsx'
+BlogsList : 'app/components/BlogsList.jsx',
+AddBlog : 'app/components/AddBlog.jsx',
+BlogComments : 'app/components/BlogComments.jsx',
+applicationStyles: 'app/styles/app.css'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -33,7 +36,7 @@ Blogs : 'app/components/blogs.jsx'
       {
     loader: 'babel-loader',
     query: {
-      presets: ['react','es2015']
+      presets: ['react','es2015','stage-2']
     },
     tests: /.jsx?$/,
     exclude: /(node_modules|bower_components)/
