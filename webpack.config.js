@@ -27,7 +27,11 @@ OpenBlog : 'app/api/OpenBlog.jsx',
 BlogsList : 'app/components/BlogsList.jsx',
 AddBlog : 'app/components/AddBlog.jsx',
 BlogComments : 'app/components/BlogComments.jsx',
-applicationStyles: 'app/styles/app.css'
+applicationStyles: 'app/styles/app.css',
+actions: 'app/actions/actions.jsx',
+reducers: 'app/reducers/reducers.jsx',
+configureStore:'app/store/configureStore.jsx',
+AddComment : 'app/components/AddComment.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

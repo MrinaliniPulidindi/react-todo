@@ -12,7 +12,6 @@ var requestUrl = `${BLOG_URL}`;
 
 return axios.get(requestUrl).then(function(data)
 {
-console.log(data);
 return data.data;
 }, function(res)
 {
@@ -25,7 +24,7 @@ return data.data;
 var requestUrl = `${COMMENT_URL}?postId=${postId}`;
 return axios.get(requestUrl).then(function(data)
 {
-console.log(data);
+
 return data.data;
 }, function(res)
 {
@@ -39,7 +38,7 @@ var requestUrl = `${POST_URL}`;
 alert(postData.body);
 return axios.post(requestUrl,postData).then(function(data)
 {
-console.log(data);
+
 return data;
 }, function(res)
 {
@@ -53,7 +52,6 @@ var requestUrl = `${POST_COMMENT}`;
 
  return axios.post(requestUrl,postData).then(function(data)
 {
-console.log(data);
 return data;
 }, function(res)
 {
@@ -67,11 +65,11 @@ var requestUrl = `${DELETE_BLOG_URL}`;
 
 return axios.delete(requestUrl).then(function(data)
 {
-  debugger;
-console.log(data);
+
 return data;
 }, function(res)
 {
+  debugger;
   throw new Error(res.data);
 });
   }
